@@ -58,7 +58,7 @@ export function WorkspaceShell({
             {nav.map((item) => {
               const Icon = item.icon;
               return (
-                <Link key={item.href} className="flex items-center gap-2 rounded-xl px-3 py-2 hover:bg-slate-100" href={item.href}>
+                <Link key={item.href} className="flex items-center gap-2 rounded-xl px-3 py-2 hover:bg-slate-100" href={item.href as any}> hover:bg-slate-100" href={item.href}>
                   <Icon className="h-4 w-4" />
                   {item.label}
                 </Link>
